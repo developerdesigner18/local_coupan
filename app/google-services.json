@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1024679168419",
+    "project_id": "yucall-coupon",
+    "storage_bucket": "yucall-coupon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024679168419:android:1e543ce9b9fb16c5f97216",
+        "android_client_info": {
+          "package_name": "com.example.local_coupan.activity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1024679168419-1qnr3nra49d0ilk4b53q4tb28hljshkr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.local_coupan.activity",
+            "certificate_hash": "a68a1aa1c2f7bbc475008177fe7e600003850b96"
+          }
+        },
+        {
+          "client_id": "1024679168419-p1st36ic5ke01g0ujbh3rb9h1k92us87.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx0-pX5FXwsSo55GJg9OlL3trJWgrVMQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1024679168419-p1st36ic5ke01g0ujbh3rb9h1k92us87.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

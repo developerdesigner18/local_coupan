@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:debuggable="false"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Local_coupan"
+        android:usesCleartextTraffic="true"
+        tools:ignore="HardcodedDebugMode"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".activity.Image_set_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activity.login_screen"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDUCMJaiX1dvLNq2aHSfe858eUQlNjfqgE" />
+
+        <activity
+            android:name=".activity.select_location"
+            android:exported="false"
+            android:label="@string/title_activity_select_location" />
+        <activity
+            android:name=".activity.select_maps_Activity"
+            android:exported="false"
+            android:label="@string/title_activity_select_maps" />
+        <activity android:name=".activity.select_geofence_units" />
+        <activity android:name=".activity.select_location_method" />
+        <activity android:name=".activity.select_journey_type" />
+        <activity android:name=".activity.select_market_group_activity" />
+        <activity android:name=".activity.Enter_temprerture_activity" />
+        <activity android:name=".activity.Enter_age_activity" />
+        <activity android:name=".activity.select_weather_activity" />
+        <activity android:name=".activity.select_gender_activity" />
+        <activity android:name=".activity.select_country_activity" />
+        <activity android:name=".activity.share_and_use_activity" />
+        <activity android:name=".activity.register_screen" />
+        <activity android:name=".activity.Address_activity" />
+        <activity android:name=".activity.coupon_share" />
+        <activity android:name=".activity.coupon_verify_activity" />
+        <activity android:name=".activity.OTPverify" />
+        <activity android:name=".activity.Payment_method" />
+        <activity android:name=".activity.Scanner_activity" />
+        <activity android:name=".activity.time_activity" />
+        <activity android:name=".activity.date_activity" />
+        <activity android:name=".activity.qrcode_activity"/>
+        <activity android:name=".activity.select_month_activity" />
+        <activity android:name=".activity.select_year_activity" />
+        <activity android:name=".activity.Launch_date_activity" />
+        <activity android:name=".activity.show_calculation_activity" />
+        <activity android:name=".activity.Show_Currency_activity" />
+        <activity android:name=".activity.dealtype_activity" />
+        <activity android:name=".activity.Web_activity" />
+        <activity android:name=".activity.MapsMainActivity" />
+        <activity android:name=".activity.Offer_terms_activity" />
+        <activity android:name=".activity.Direct_share_Activity" />
+        <activity android:name=".activity.Share_activity" />
+        <activity android:name=".activity.Yucall_coupon_activity" />
+        <activity android:name=".activity.Coupon_terms_activity" />
+        <activity android:name=".activity.Terms_activity" />
+        <activity android:name=".activity.Pay_activity" />
+        <activity android:name=".activity.overallbudget_activity" />
+        <activity android:name=".activity.Target_activity" />
+        <activity android:name=".activity.location_activity" />
+        <activity android:name=".activity.Coupon_deal_activity" />
+        <activity android:name=".activity.Addcoupon_activity" />
+        <activity android:name=".activity.Statistics_activity" />
+        <activity android:name=".activity.Budget_activity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.Yucall_terms_activity" />
+        <activity android:name=".activity.edit_date_activity" />
+        <activity android:name=".activity.Coupon_details"
+            android:exported="true">
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <!--                https://yucall.com/applinks/?curPage=0-->
+                <data
+                    android:host="yucall.com"
+                    android:pathPrefix="/applinks"
+                    android:scheme="https"/>
+                <data
+                    android:host="yucall.com"
+                    android:pathPrefix="/applinks"
+                    android:scheme="http"
+                    />
+            </intent-filter>
+            <!--            https://yucall.page.link/ids-->
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <!--                https://array.page.link/ids-->
+                <data
+                    android:host="yucall.page.link"
+                    android:pathPrefix="/ids"
+                    android:scheme="http"/>
+                <data
+                    android:host="yucall.page.link"
+                    android:pathPrefix="/ids"
+                    android:scheme="https"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
